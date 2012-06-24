@@ -11,6 +11,15 @@
 <% @events.each do |event| %>
   <tr>
     <td><%= event.url %></td>
+	<td><%= event.name %></td>
+	<td><%= event.address %></td>
+	<td><%= event.city %></td>
+	<td><%= event.state %></td>
+	<td><%= event.zip %></td>
+	<td><%= event.time %></td>
+	<td><%= event.latitude %></td>
+	<td><%= event.venue %></td>
+	<td><%= event.description %></td>
     <td><%= link_to 'Show', event %></td>
     <td><%= link_to 'Edit', edit_event_path(event) %></td>
     <td><%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %></td>
