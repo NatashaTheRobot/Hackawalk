@@ -1,0 +1,1 @@
+This app will help people find hackathons. 
