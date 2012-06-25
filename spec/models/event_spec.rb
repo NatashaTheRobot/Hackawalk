@@ -12,9 +12,10 @@
 #  state       :string(255)
 #  zip         :integer
 #  time        :integer
-#  latitude    :float
+#  latitude    :float(10)
 #  venue       :string(255)
 #  description :text
+#  longitude   :decimal(10, 6)
 #
 
 require 'spec_helper'
