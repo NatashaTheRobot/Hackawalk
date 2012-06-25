@@ -11,7 +11,7 @@
 #  city        :string(255)
 #  state       :string(255)
 #  zip         :integer
-#  time        :
+#  time        :integer
 #  latitude    :float
 #  venue       :string(255)
 #  description :text
