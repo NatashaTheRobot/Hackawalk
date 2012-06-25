@@ -15,18 +15,18 @@ ActiveRecord::Schema.define(:version => 20120625002345) do
 
   create_table "events", :force => true do |t|
     t.string   "url"
-    t.datetime "created_at",                                               :null => false
-    t.datetime "updated_at",                                               :null => false
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
     t.string   "name"
     t.string   "address"
     t.string   "city"
     t.string   "state"
     t.integer  "zip"
     t.integer  "time"
-    t.float    "latitude",    :limit => 10
+    t.float    "latitude"
     t.string   "venue"
     t.text     "description"
-    t.decimal  "longitude",                 :precision => 10, :scale => 6
+    t.decimal  "longitude",   :precision => 10, :scale => 6
   end
 
 end
