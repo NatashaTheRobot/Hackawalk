@@ -11,21 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120624221537) do
+ActiveRecord::Schema.define(:version => 20120625005955) do
 
-  create_table "events", :force => true do |t|
-    t.string   "url"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.string   "name"
-    t.string   "address"
-    t.string   "city"
-    t.string   "state"
-    t.integer  "zip"
-    t.integer  "time"
-    t.float    "latitude"
-    t.string   "venue"
-    t.text     "description"
-  end
+# Could not dump table "events" because of following StandardError
+#   Unknown type 'bignum' for column 'time'
 
 end
