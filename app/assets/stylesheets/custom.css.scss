@@ -12,7 +12,8 @@ html {
 
 body {
   padding-top: 90px;
-  font-family: "proxima nova";
+  font-family: "proxima nova", sans-serif;
+  background: #ECECEC url("gray_bg.png");
 }
 
 section {
@@ -34,13 +35,14 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family: "swingdancer", sans-serif;
 }
 
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+  //text-align: center;
 }
 
 h2 {
@@ -64,15 +66,24 @@ header {
   margin-bottom: 10px;
 }
 
+.navbar {
+  box-shadow: inset 0 1px white, 0 1px 3px rgba(34, 25, 25, 0.4)
+}
+
+.navbar-custom {
+  background-image: url("navbar-bg.jpg");
+  padding-top: 20px;
+  padding-bottom:10px;
+  text-align:center;
+}
+
 #logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+  text-align:center;
+  font-family: "swingdancer";
+  font-size: 3em;
+  color: #FAFAFA;
+  padding-top: 15px;
+  text-shadow: 1px -2px 0 black;
   line-height: 1;
   &:hover {
     color: #fff;
@@ -80,9 +91,7 @@ header {
   }
 }
 
-.navbar {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
+
 
 /* Container */
 
