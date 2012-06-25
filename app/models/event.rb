@@ -19,5 +19,7 @@
 
 class Event < ActiveRecord::Base
   attr_accessible :url, :name, :address, :city, :state, :zip, :time, :latitude, :venue, :description
+  validates_uniqueness_of :url
+  
   
 end
